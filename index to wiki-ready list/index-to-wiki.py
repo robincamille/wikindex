@@ -27,7 +27,7 @@ for line in lines:
 
      if re.match(r"^\*\[\[(([A-Z](\.|\s|\]))|Dr\.|Mrs(\.*)\s|Rev\.|Miss\s|Prof\.|Mr(\.*)\s|Messrs(\.*))",line): #ignore names beginning with initials, like J. Adams, or titles
           pass
-     elif re.search(r"(See|see)",line): #remove lines that include 'See ___'
+     elif re.search(r"(See|see|Index|INDEX)",line): #remove lines that include 'see' or 'index'
           pass                   
      elif re.match(r"^\*\[\[[A-Z]",line): #only names beginning with capital letters
           outText.write(line)
@@ -37,21 +37,4 @@ for line in lines:
 
 outText.close()
 
-#from here to bottom: breaks list into columms of 30 items and outputs second file, index-wikified-listified.txt
-
-outText=open('index-wikified.txt','r')
-out=outText.readlines()
-outTextCol=open('index-wikified-listified.txt','w')
-outTextCol.write('{{col-begin}}\n{{col-break}}\n')
-
-for n in out:
-     if out.index(n)>1 and out.index(n)%30 == 0: #change 30 to whatever you want if columns are too long/short
-          outTextCol.write(n + '{{col-break}}\n')
-     else:
-          outTextCol.write(n)
-
-outTextCol.write('{{col-end}}')
-
-outText.close()
-outTextCol.close()
-print 'Done!'
+print 'Wikified!'

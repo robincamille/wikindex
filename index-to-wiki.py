@@ -1,15 +1,5 @@
 # -*- coding: utf-8 -*-
 
-## Plain-text indexes from old books + this script = a Wikipedia-ready list of entities for your sandbox!
-## Use case: which entities in this index don't yet have a wiki page?
-## You should manually review the items on your generated list.
-## Script does not work well with complex indexes or diacritics.
-
-## Example: index at the end of text like http://www.gutenberg.org/files/20393/20393-h/20393-h.htm
-## generates a list like at http://en.wikipedia.org/wiki/User:Rcamilled/Redlinks
-
-## Written by @robincamille, a Python novice. Suggestions welcome!
-
 import re
 
 outText=open('index-wikified.txt','w')

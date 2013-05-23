@@ -1,6 +1,3 @@
-#break list into columms of 30 items and output index-listified.txt
-#for use after you've weeded index-wikified.txt (or for any wiki list)
-
 outText=open('index-wikified.txt','r') #or whichever file you're listifying
 out=outText.readlines()
 outTextCol=open('index-listified.txt','w')

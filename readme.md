@@ -5,7 +5,7 @@ By Robin Camille Davis (@robincamille), begun 2013, updated 2016
 ## About 
 Who's been written about in books, but not on Wikipedia? Who has an article in a printed encyclopedia, but not on Wikipedia?
 
-This Python script turns text formatted as a typical book's index of names to a list of Wikipedia links. This task is useful for creating 'red link lists,' which are usually listed on a Wikipedia user page and are an easy way to visualize who's been written about and who hasn't. (Example: [Women in history](https://en.wikipedia.org/wiki/User:Rcamilled/Redlinks/Women_in_history), red link lists I made using indexes from encyclopedias.)
+This Python script turns text formatted as a typical book's index of names to a list of Wikipedia links, split into columns. This task is useful for creating 'red link lists,' which are usually listed on a Wikipedia user page and are an easy way to visualize who's been written about and who hasn't. (Example: [Women in history](https://en.wikipedia.org/wiki/User:Rcamilled/Redlinks/Women_in_history), red link lists I made using indexes from encyclopedias.)
 
 ## How to use
 1. Select an index that you can copy/paste from. Encyclopedias and history books are especially great for this.
@@ -23,21 +23,9 @@ This Python script turns text formatted as a typical book's index of names to a 
 
 ### What the script does to text
 Turns this, from a plain-text file:
-> Abree, J., 253.
+>Abree, J., 253.<br/>Alday. See Alde.<br/>Alde, Edward, 163, 169.<br/>Alde, Elizabeth, 169.<br/>Alde, John, 101, 163.<br/>Allen, Edward, 271.<br/>Allen, John, 220.<br/>
 
-> Alday. See Alde.
-
-> Alde, Edward, 163, 169.
-
-> Alde, Elizabeth, 169.
-
-> Alde, John, 101, 163.
-
-> Allen, Edward, 271.
-
-> Allen, John, 220.
-
-Into this, outputted into a plain-text file:
+... Into this, outputted into a plain-text file...
 ```
 {{col-begin}}
 {{col-break}}
@@ -48,6 +36,18 @@ Into this, outputted into a plain-text file:
 *[[John Allen]]
 {{col-end}}
 ```
+
+... Which looks like this on Wikipedia: 
+
+<ul>
+<li><a href="/w/index.php?title=Edward_Alde&amp;action=edit&amp;redlink=1" class="new" title="Edward Alde (page does not exist)">Edward Alde</a></li>
+<li><a href="/w/index.php?title=Elizabeth_Alde&amp;action=edit&amp;redlink=1" class="new" title="Elizabeth Alde (page does not exist)">Elizabeth Alde</a></li>
+<li><a href="/w/index.php?title=John_Alde&amp;action=edit&amp;redlink=1" class="new" title="John Alde (page does not exist)">John Alde</a></li>
+<li><a href="/wiki/Edward_Allen" class="mw-disambig" title="Edward Allen">Edward Allen</a></li>
+<li><a href="/wiki/John_Allen" class="mw-disambig" title="John Allen">John Allen</a></li>
+</ul>
+
+
 
 Page numbers are stripped out, and names are flipped from *last, first* to *first last*. Notice that lines like *Alday. See Alde.* were removed. Names with just an initial, like *Abree, J.*, were removed. Titles, like "Dr.", are also stripped out.
 

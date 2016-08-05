@@ -40,16 +40,20 @@ Turns this, from a plain-text file:
 ... Which looks like this on Wikipedia: 
 
 <ul>
-<li><a href="/w/index.php?title=Edward_Alde&amp;action=edit&amp;redlink=1" class="new" title="Edward Alde (page does not exist)">Edward Alde</a></li>
-<li><a href="/w/index.php?title=Elizabeth_Alde&amp;action=edit&amp;redlink=1" class="new" title="Elizabeth Alde (page does not exist)">Elizabeth Alde</a></li>
-<li><a href="/w/index.php?title=John_Alde&amp;action=edit&amp;redlink=1" class="new" title="John Alde (page does not exist)">John Alde</a></li>
-<li><a href="/wiki/Edward_Allen" class="mw-disambig" title="Edward Allen">Edward Allen</a></li>
-<li><a href="/wiki/John_Allen" class="mw-disambig" title="John Allen">John Allen</a></li>
+<li><a href="/w/index.php?title=Edward_Alde&amp;action=edit&amp;redlink=1" class="new" title="Edward Alde (page does not exist)" style="color:red" >Edward Alde</a></li>
+<li><a href="/w/index.php?title=Elizabeth_Alde&amp;action=edit&amp;redlink=1" class="new" title="Elizabeth Alde (page does not exist)" style="color:red" >Elizabeth Alde</a></li>
+<li><a href="/w/index.php?title=John_Alde&amp;action=edit&amp;redlink=1" class="new" title="John Alde (page does not exist)" style="color:red" >John Alde</a></li>
+<li><a href="/wiki/Edward_Allen" class="mw-disambig" title="Edward Allen" style="color:blue" >Edward Allen</a></li>
+<li><a href="/wiki/John_Allen" class="mw-disambig" title="John Allen" style="color:blue" >John Allen</a></li>
 </ul>
 
 
-
-Page numbers are stripped out, and names are flipped from *last, first* to *first last*. Notice that lines like *Alday. See Alde.* were removed. Names with just an initial, like *Abree, J.*, were removed. Titles, like "Dr.", are also stripped out.
+#### What's happening?
+- Page numbers are stripped out.
+- Names are flipped from *last, first* to *first last*. 
+- Lines like *Alday. See Alde.* are removed. 
+- Names with just an initial, like *Abree, J.*, are removed. 
+- Titles, like "Dr.", are also removed.
 
 ## Caveats 
 If your list has 150+ names on it, split it into chunks of 150 names each (so that you don't have more than 5 columns of 30 names in your output page). This will also make it easier to navigate your resulting user page.

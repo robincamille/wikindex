@@ -1,7 +1,5 @@
 # WikIndex
 
-By Robin Camille Davis (@robincamille), begun 2013, updated 2016
-
 ## About 
 Who has been written about in a printed encyclopedia, but not on Wikipedia? Who's missing?
 
@@ -67,3 +65,7 @@ PS. If you use this for something cool, I'd love to hear about it!
 
 ### License 
 CC BY-NC
+
+By Robin Camille Davis (@robincamille)
+
+*Begun 2013, updated 2016*

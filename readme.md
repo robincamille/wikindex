@@ -3,9 +3,9 @@
 By Robin Camille Davis (@robincamille), begun 2013, updated 2016
 
 ## About 
-Who's been written about in books, but not on Wikipedia? Who has an article in a printed encyclopedia, but not on Wikipedia?
+Who has been written about in a printed encyclopedia, but not on Wikipedia? Who's missing?
 
-This Python script turns text formatted as a typical book's index of names to a list of Wikipedia links, split into columns. This task is useful for creating 'red link lists,' which are usually listed on a Wikipedia user page and are an easy way to visualize who's been written about and who hasn't. (Example: [Women in history](https://en.wikipedia.org/wiki/User:Rcamilled/Redlinks/Women_in_history), red link lists I made using indexes from encyclopedias.)
+This Python script turns text formatted as a typical book's index of names to a list of Wikipedia links, split into columns of 30 items each. This task is useful for creating 'red link lists,' which are usually listed on a Wikipedia user page and are an easy way to visualize who's been written about and who hasn't. (Example: [Women in history](https://en.wikipedia.org/wiki/User:Rcamilled/Redlinks/Women_in_history), red link lists I made using indexes from encyclopedias.)
 
 ## How to use
 1. Select an index that you can copy/paste from. Encyclopedias and history books are especially great for this.
@@ -18,8 +18,8 @@ This Python script turns text formatted as a typical book's index of names to a 
 
 ## Example 
 ### Raw source to red link list
-**Source:** [Raw index in a book about printing history from 1900](http://www.gutenberg.org/files/20393/20393-h/20393-h.htm) (scroll down)
-**Output:** [Links on my user page](https://en.wikipedia.org/wiki/User:Rcamilled/Redlinks/Printers#Entities_mentioned_in_Plomer) (I later split them into lists of red & blue links)
+- **Source:** [Raw index in a book about printing history from 1900](http://www.gutenberg.org/files/20393/20393-h/20393-h.htm) (scroll to bottom to see index)
+- **Output:** [Links on my user page](https://en.wikipedia.org/wiki/User:Rcamilled/Redlinks/Printers#Entities_mentioned_in_Plomer) (I later split them into lists of red & blue links)
 
 ### What the script does to text
 Turns this, from a plain-text file:
@@ -37,7 +37,7 @@ Turns this, from a plain-text file:
 {{col-end}}
 ```
 
-... Which looks like this on Wikipedia (screenshot): 
+... Which looks like this when posted on Wikipedia (screenshot): 
 
 ![Screenshot of Wikipedia, 3 red links, 2 blue links](http://i.imgur.com/btuhJ7p.png)
 
@@ -45,9 +45,9 @@ Turns this, from a plain-text file:
 #### What's happening?
 - Page numbers are stripped out.
 - Names are flipped from *last, first* to *first last*. 
-- Lines like *Alday. See Alde.* are removed. 
-- Names with just an initial, like *Abree, J.*, are removed. 
-- Titles, like "Dr.", are also removed.
+- Lines like *Alday. See Alde.* are ignored. 
+- Names with just an initial, like *Abree, J.*, are ignored. 
+- Titles, like "Dr.", are also ignored.
 
 ## Caveats 
 If your list has 150+ names on it, split it into chunks of 150 names each (so that you don't have more than 5 columns of 30 names in your output page). This will also make it easier to navigate your resulting user page.

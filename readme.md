@@ -63,6 +63,9 @@ Submit a pull request if you found a problem and fixed it.
 
 PS. If you use this for something cool, I'd love to hear about it! 
 
+###Future work###
+Shell script to remove blue links automatically, or to separate blue from red — if Wikipedia link resolves with /firstname_lastname
+
 ### License 
 CC BY-NC
 

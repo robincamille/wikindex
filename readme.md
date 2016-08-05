@@ -40,11 +40,11 @@ Turns this, from a plain-text file:
 ... Which looks like this on Wikipedia: 
 
 <ul>
-<li><a href="/w/index.php?title=Edward_Alde&amp;action=edit&amp;redlink=1" class="new" title="Edward Alde (page does not exist)" style="color:red" >Edward Alde</a></li>
-<li><a href="/w/index.php?title=Elizabeth_Alde&amp;action=edit&amp;redlink=1" class="new" title="Elizabeth Alde (page does not exist)" style="color:red" >Elizabeth Alde</a></li>
-<li><a href="/w/index.php?title=John_Alde&amp;action=edit&amp;redlink=1" class="new" title="John Alde (page does not exist)" style="color:red" >John Alde</a></li>
-<li><a href="/wiki/Edward_Allen" class="mw-disambig" title="Edward Allen" style="color:blue" >Edward Allen</a></li>
-<li><a href="/wiki/John_Allen" class="mw-disambig" title="John Allen" style="color:blue" >John Allen</a></li>
+<li><a href="/w/index.php?title=Edward_Alde&amp;action=edit&amp;redlink=1" class="new" title="Edward Alde (page does not exist)"><font color="red">Edward Alde</font></a></li>
+<li><a href="/w/index.php?title=Elizabeth_Alde&amp;action=edit&amp;redlink=1" class="new" title="Elizabeth Alde (page does not exist)" ><font color="red">Elizabeth Alde</font></a></li>
+<li><a href="/w/index.php?title=John_Alde&amp;action=edit&amp;redlink=1" class="new" title="John Alde (page does not exist)"><font color="red">John Alde</font></a></li>
+<li><a href="/wiki/Edward_Allen" class="mw-disambig" title="Edward Allen" >Edward Allen</a></li>
+<li><a href="/wiki/John_Allen" class="mw-disambig" title="John Allen">John Allen</a></li>
 </ul>
 
 

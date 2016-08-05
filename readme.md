@@ -38,7 +38,8 @@ Turns this, from a plain-text file:
 ```
 
 ... Which looks like this on Wikipedia (screenshot): 
-![Screenshot of Wikipedia](http://i.imgur.com/btuhJ7p.png)
+
+![Screenshot of Wikipedia, 3 red links, 2 blue links](http://i.imgur.com/btuhJ7p.png)
 
 
 #### What's happening?

@@ -66,6 +66,8 @@ PS. If you use this for something cool, I'd love to hear about it!
 ###Future work###
 Multiple outputs for some names, e.g. "Firstname Middlename Lastname, or Firstname M. Lastname, or Firstname Lastname."
 
+Test on different name formats, e.g., two middle names. 
+
 Shell script to remove blue links automatically, or to separate blue from red — if Wikipedia link resolves.
 
 Script to note when a blue link resolve to a disambiguation page.

@@ -64,7 +64,11 @@ Submit a pull request if you found a problem and fixed it.
 PS. If you use this for something cool, I'd love to hear about it! 
 
 ###Future work###
-Shell script to remove blue links automatically, or to separate blue from red — if Wikipedia link resolves with /firstname_lastname
+Multiple outputs for some names, e.g. "Firstname Middlename Lastname, or Firstname M. Lastname, or Firstname Lastname."
+
+Shell script to remove blue links automatically, or to separate blue from red — if Wikipedia link resolves.
+
+Script to note when a blue link resolve to a disambiguation page.
 
 ### License 
 CC BY-NC

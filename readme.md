@@ -48,6 +48,8 @@ Turns this, from a plain-text file:
 - Titles, like "Dr.", are also ignored.
 
 ## Caveats 
+Currently deletes lines with parentheses in them (useful for stripping out See Also lines, not useful for some texts). 
+
 If your list has 150+ names on it, split it into chunks of 150 names each (so that you don't have more than 5 columns of 30 names in your output page). This will also make it easier to navigate your resulting user page.
 
 This script does not work well with overly-complex indexes or diacritics, sorry :(
